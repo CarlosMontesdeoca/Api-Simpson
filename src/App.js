@@ -30,9 +30,10 @@ function App() {
 
     })
 
-  const handleNext = () => {
+  const handleNext = ( number) => {
     //var card = document.getElementById("1");
-    console.log("num", document.getElementById("num"))
+    console.log("num", number);
+    setNum( number)
     setCallApi(true)
   }
 
@@ -51,7 +52,7 @@ function App() {
       <h1>  Ejercicio Simpsons</h1>
       <br/>
       <input type="number" name="num" id="num"/>
-      <button onClick={handleNext} > Next </button>
+      <button onClick={() => handleNext (document.getElementById("num"))} > Next </button>
         <div className="random">
         
           {
@@ -63,7 +64,7 @@ function App() {
                 <div>
                   <h3> {simpson[0].character} </h3>
                   <p> {simpson[0].quote} </p>  
-                  <button onClick={ handleAddFavorites (simpson.image, simpson.character, simpson.quote)} >Favoritos</button>
+                  <button onClick={ () => handleAddFavorites (simpson.image, simpson.character, simpson.quote)} >Favoritos</button>
                 </div>
               </div>
               
