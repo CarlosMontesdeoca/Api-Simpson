@@ -42,7 +42,6 @@
 } 
 
 .random {
-  background: #61dafb;
   width: 600px;
   height: auto;
   margin: 10px;
@@ -52,4 +51,21 @@
 .card {
   height: 100px;
   width: 100px;
+}
+
+.container {
+  
+  background-image: url("https://as01.epimg.net/epik/imagenes/2020/04/22/portada/1587542523_132599_1587544250_noticia_normal.jpg" );
+}
+
+.box-container {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.title {
+  height: auto;
+  width: 600px;
+  background: #e1f757;
+  text-align: center;
 }
